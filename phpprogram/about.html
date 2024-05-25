@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Home Page</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: blueviolet;
+        /* padding: 10px; */
+      }
+      .head {
+        background-color: blanchedalmond;
+        padding: 1px;
+      }
+      .container {
+        position: relative;
+        /* width: 50%; */
+        float: left;
+        width: 33.33%;
+      }
+
+      .image {
+        display: block;
+        width: 50%;
+        height: 50%;
+      }
+      #tin.image {
+        border-radius: 50%;
+      }
+
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: #008bba87;
+        overflow: hidden;
+        width: 0;
+        height: 100%;
+        transition: 0.3s ease;
+      }
+
+      .container:hover .overlay {
+        width: 50%;
+      }
+
+      .text {
+        white-space: nowrap;
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      .row::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+      .container {
+        float: left;
+        width: 33.33%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="head">
+      <h1>Stock Market Prediction</h1>
+    </div>
+    <hr />
+    <p>
+      This project is based on the stock market where the money plays a
+      important role. So, we should always be carefull about making decission.
+      These prediction are for education purpose only.
+    </p>
+    <!-- <div class="img">
+        
+        <img src="subro.jpg" height="300px">
+        <img src="pri.jpg" height="300px">
+        <img src="rdpd.jpg" height="300px">
+    </div> -->
+    <div class="row">
+      <div class="container">
+        <img src="pri.jpg" alt="Avatar" class="image" id="tin" height="300px" />
+        <div class="overlay">
+          <div class="text">Er. Prince Kumar</div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <p>
+      This is website where you can see the share price prediction on daily
+      basis.
+      <br />
+      daily this website is updated by the regular share prices.
+    </p>
+  </body>
+</html>

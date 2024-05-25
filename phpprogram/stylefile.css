@@ -1,0 +1,21 @@
+h1{
+    color: blueviolet;
+}
+table{
+    text-align: center;
+    font-size: 25px;
+    /* border-style: solid; */
+    font-family: 'Times New Roman', Times, serif;
+    color:rgb(0, 0, 0);
+}
+
+th{
+    background-color: rgb(155, 108, 108);
+    color:rgb(255, 255, 255);
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+tr:nth-child(even){
+    background-color: rgba(155, 108, 108, 0.25);
+}
